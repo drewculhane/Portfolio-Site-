@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Syncopate&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
 html, body{
-    height: 400vh; 
+    height: 350vh; 
     background-color: white; 
     width: 100%; 
     overflow: visible; 
@@ -12,8 +12,7 @@ html, body{
 }
 
 .moonfisher { 
-    grid-area: 1/1/2/2; 
-    height: 20vh;
+    grid-area: 1/1/2/2;
     display: flex; 
     grid-template-rows: 1fr; 
     grid-template-columns: 1fr, 1fr;  
@@ -24,11 +23,10 @@ html, body{
 }
 .blueclouds { 
     grid-area: 1/2/2/3; 
-    height: 20vh; 
     display: grid; 
     width: 51.3%; 
-    grid-template-rows: 1fr, 1fr, 1fr, 1fr; 
-    grid-template-columns: 1fr, 1fr, 1fr, 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
 }
 
 .bcg22 {
@@ -42,7 +40,6 @@ html, body{
 }
 .rain1 {
     grid-area: 3/1/5/3;
-    height: 8vh; 
 }
 .rainimage1 { 
     max-height: 100%; 
@@ -87,7 +84,6 @@ margin-top: 5%;
     padding-right: 1%; 
 }
 .clouds {
-    min-height: 17vh; 
 }
 
 body {
@@ -102,7 +98,7 @@ nav {
 .gridcontainerbigbig {
     display: grid; 
     width: 100%;
-    grid-template-rows: 40vh, 30vh, 70vh, 130vh, 70vh;
+    grid-template-rows: 40vh 30vh 400vh 130vh;
     grid-template-columns: 100%; 
 }
 .homeajc { 
@@ -269,7 +265,7 @@ a img {
 
 .fishinggrid { 
     display: grid; 
-    grid-template-rows: 20vh, 5vh, 10vh; 
+    grid-template-rows: 15vh 6vh 15vh; 
     grid-template-columns: 1fr;  
     margin-left: 5%; 
     margin-right: 5%; 
@@ -277,21 +273,22 @@ a img {
 
 .moonfisher { 
     grid-area: 1/1/2/2; 
-    height: 20vh; 
 }
 .moonfisher1 { 
     max-height: 100%; 
+    min-height: 100%; 
 }
 
 
 
 .hook { 
     grid-area: 2/1/3/2; 
-    height: 5vh; 
-    margin-left:2.5vw; 
+    margin-left: 1vh; 
 }
+
 .hook img { 
     max-height: 100%; 
+    z-index: 50000; 
 }
 
 @-webkit-keyframes swinging{
@@ -314,8 +311,7 @@ a img {
 }
 
 .clouds { 
-    grid-area: 3/1/4/2; 
-    height: 15vh; 
+    grid-area: 3/1/4/2;
     background-color: #4356a4; 
     display: grid; 
     grid-template-rows: 1fr, 1fr, 1fr; 
@@ -421,22 +417,22 @@ a img {
 }
 .fishingfun p .one11 {
     display: none; 
+
 }
+.fishinggrid {
+    margin-bottom: 5%; 
+        display: grid; 
+        grid-template-rows: 20vh 6vh 15vh; 
+        grid-template-columns: 1fr;  
+        margin-left: 5%; 
+        margin-right: 5%; 
+    }
 
 
 
 @media only screen and (min-width: 768px) {
    
-    .fishinggrid { 
-        display: grid; 
-        grid-template-rows: 20vh, 5vh, 20vh; 
-        grid-template-columns: 1fr;  
-        grid-gap: 5px; 
-        margin-left: 5%; 
-        margin-right: 5%; 
-    }
-   
-   
+    
    
     .clouds .fish1,.fish2,.fish3 { 
         display: none; 
@@ -509,30 +505,12 @@ a img {
         font-size: 50px; 
         margin-top: 5%;
     }
-    .hook {
-        height: 7.5vh; 
-    }
     .waves img {
         min-height: 150%; 
-    }
-    .moonfisher { 
-        grid-area: 1/1/2/2; 
-        height: 30vh;
-        display: flex; 
-        grid-template-rows: 1fr; 
-        grid-template-columns: 1fr, 1fr;  
     }
 
     .moonfisher1 { 
         grid-area: 1/1/2/2; 
-    }
-    .blueclouds { 
-        grid-area: 1/2/2/3; 
-        height: 20vh; 
-        display: grid; 
-        width: 51.3%; 
-        grid-template-rows: 1fr, 1fr, 1fr, 1fr; 
-        grid-template-columns: 1fr, 1fr, 1fr, 1fr; 
     }
    
     .bcg22 {
@@ -544,44 +522,8 @@ a img {
         grid-area: 2/1/3/3;
         /* background-color: blue;  */
     }
-    .rain1 {
-        grid-area: 3/1/5/3;
-        height: 8vh; 
-    }
-    .rainimage1 { 
-        max-height: 100%; 
-        cursor: pointer; 
-        display: none; 
-        animation: 0.8s step-end infinite;
-        animation-name: blinkrain;  
-    }
-    .rainimage2 { 
-        max-height: 100%; 
-        cursor: pointer; 
-        display: none; 
-        animation: 0.8s step-end infinite;
-        animation-delay: 0.2s; 
-        animation-name: blinkrain;  
-    }
-    @keyframes blinkrain { 
-        0% {visibility: hidden;}
-        50%{visibility: visible;}
-    }
 
-    .rain2 { 
-        grid-area: 2/3/3/5; 
-    }
-    .cloud9 { 
-        max-width: 60%; 
-        cursor: pointer; 
-    }
-    .blueclouds div {
-        display: flex; 
-        align-items: center; 
-        justify-content: center; 
-    }
-
-.fishinggrid {
+    .fishinggrid {
     margin-top: 5%; 
     
 }
@@ -596,7 +538,7 @@ a img {
         max-height: 40vh; 
     }
     .clouds {
-        min-height: 30vh; 
+        min-height: 20vh; 
     }
     .waves {
         min-height: 5vh; 
@@ -621,7 +563,15 @@ a img {
     .leftground {
         font-size: 40px; 
     }
-
+    .gridcontainerbigbig {
+        display: grid; 
+        width: 100%;
+        grid-template-rows: 40vh 70vh 200vh 130vh;
+        grid-template-columns: 100%; 
+    }
+    .mainProjects {
+        padding-top: 20%; 
+    }
     }
     
 
@@ -727,47 +677,29 @@ a img {
             font-size: 40px; 
         }
         .hook {
-            margin-left: 1.5vw; 
+            margin-left: 2vh; 
         }
+        .gridcontainerbigbig {
+            display: grid; 
+            width: 100%;
+            grid-template-rows: 30vh 65vh 120vh 100vh 40vh;
+            grid-template-columns: 100%; 
         }
-
-        /* @media only screen and (min-height: 700px) {
-
-            /* .hook img {
-                margin-left: 0.8vw; 
-                
-            } */
-        } 
-        /* @media only screen and (min-height: 800px) {
-            form {
-                height: 35vh; 
-            }
-            /* .hook img {
-                margin-left: 0.3vw; 
-            } */
-        } */
-        /* @media only screen and (min-width: 1275px) {
-            
-            .moonfisher {
+        .fishinggrid  { 
+                display: grid; 
+                grid-template-rows: 60% 10% 20%; 
+                grid-template-columns: 1fr;  
+                margin-left: 5%; 
+                margin-right: 5%; 
                 min-height: 50vh; 
+                margin-left: 5%; 
+                margin-right: 5%; 
             }
-            .hook {
-                height: 12.5vh; 
+            .mainProjects {
+                margin-top: 10%; 
             }
-            /* .hook img {
-                margin-left: 0.5vw; 
-                max-height: 6vh; 
-            }
-            .hook {
-                max-height: 10vh; 
-            } */
-            /* .mainProjects {
-                margin-right: 20%; 
-                margin-left: 20%;  */
-            }
-        } */
-        /* @media only screen and (min-height: 1209px) and (min-width: 1350px) {
-            /* .hook img {
-                margin-left: 1.3vw; 
-            }
-        } */ */ */
+        }
+        
+
+       
+    
