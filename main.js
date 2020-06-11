@@ -106,3 +106,15 @@ function addrain2 () {
         $rain2.hide()
     } else $rain2.show()
 }
+let $navButton = $('.navbar-toggler') 
+let $navLink = $('.nav-item')
+let $navDiv = $('.navbar-collapse')
+
+$navLink.on('click', collapsemenu)
+
+function collapsemenu () {
+    $navButton.addClass('collapsed')
+    $navButton.removeAttr('aria-expanded','true')
+    $navButton.attr('aria-expanded', 'false')
+    $navDiv.removeClass('show')
+}
