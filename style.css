@@ -98,7 +98,7 @@ nav {
 .gridcontainerbigbig {
     display: grid; 
     width: 100%;
-    grid-template-rows: 40vh 30vh 400vh 130vh;
+    grid-template-rows: 40vh 36vh 400vh 130vh;
     grid-template-columns: 100%; 
 }
 .homeajc { 
@@ -427,7 +427,9 @@ a img {
         margin-left: 5%; 
         margin-right: 5%; 
     }
-
+.gridcontainerbigbig {
+    max-width: 950px; 
+}
 
 
 @media only screen and (min-width: 768px) {
@@ -678,13 +680,8 @@ a img {
         }
         .hook {
             margin-left: 2vh; 
-        }
-        .gridcontainerbigbig {
-            display: grid; 
-            width: 100%;
-            grid-template-rows: 30vh 65vh 120vh 100vh 40vh;
-            grid-template-columns: 100%; 
-        }
+        } 
+
         .fishinggrid  { 
                 display: grid; 
                 grid-template-rows: 60% 10% 20%; 
@@ -698,7 +695,9 @@ a img {
             .mainProjects {
                 margin-top: 10%; 
             }
+
         }
+        
         
 
        
