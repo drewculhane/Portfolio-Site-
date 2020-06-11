@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Syncopate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
 html, body{
     height: 400vh; 
     background-color: white; 
@@ -9,6 +10,86 @@ html, body{
 .blueclouds { 
     display: none; 
 }
+
+.moonfisher { 
+    grid-area: 1/1/2/2; 
+    height: 20vh;
+    display: flex; 
+    grid-template-rows: 1fr; 
+    grid-template-columns: 1fr, 1fr;  
+}
+
+.moonfisher1 { 
+    grid-area: 1/1/2/2; 
+}
+.blueclouds { 
+    grid-area: 1/2/2/3; 
+    height: 20vh; 
+    display: grid; 
+    width: 51.3%; 
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr; 
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr; 
+}
+
+.bcg22 {
+    grid-area: 1/3/2/5;
+    /* background-color: blue;  */
+}
+
+.bcg44{
+    grid-area: 2/1/3/3;
+    /* background-color: blue;  */
+}
+.rain1 {
+    grid-area: 3/1/5/3;
+    height: 8vh; 
+}
+.rainimage1 { 
+    max-height: 100%; 
+    cursor: pointer; 
+    display: none; 
+    animation: 0.8s step-end infinite;
+    animation-name: blinkrain;  
+}
+.rainimage2 { 
+    max-height: 100%; 
+    cursor: pointer; 
+    display: none; 
+    animation: 0.8s step-end infinite;
+    animation-delay: 0.2s; 
+    animation-name: blinkrain;  
+}
+@keyframes blinkrain { 
+    0% {visibility: hidden;}
+    50%{visibility: visible;}
+}
+
+.rain2 { 
+    grid-area: 2/3/3/5; 
+}
+.cloud9 { 
+    max-width: 60%; 
+    cursor: pointer; 
+}
+.blueclouds div {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.fishinggrid {
+margin-top: 5%; 
+}
+.waves img {
+    min-height: 3vh; 
+}
+.waves3 {
+    padding-right: 1%; 
+}
+.clouds {
+    min-height: 17vh; 
+}
+
 body {
     display: flex; 
     flex-flow: column wrap; 
@@ -25,7 +106,7 @@ nav {
     grid-template-columns: 100%; 
 }
 .homeajc { 
-    padding-top: 60%; 
+    padding-top: 20%; 
     background-color: white; 
     border-bottom: solid 2px grey; 
     margin-right: 5%; 
@@ -51,10 +132,12 @@ nav {
     margin-right: 5%; 
     margin-left: 5%; 
     margin-bottom: 5%; 
+    display: flex; 
+    flex-direction: column; 
 }
 
 .mainProjects {
-    padding-top: 60%; 
+    padding-top: 20%; 
     grid-area: 3/1/4/2; 
     margin-right: 5%; 
     margin-left: 5%; 
@@ -67,7 +150,7 @@ nav {
 }
 
 .mainContact { 
-    padding-top: 60%; 
+    padding-top: 20%; 
     grid-area: 4/1/5/2; 
     border-bottom: solid 4px black; 
     margin-right: 5%; 
@@ -107,8 +190,10 @@ h3 {
 
 form {
     border: 2px solid black; 
-    height: 50vh; 
-    padding: 5%;
+    height: 40vh; 
+    padding-top: 5%;
+    padding-left: 10%; 
+    padding-right: 10%; 
     border-radius: 10px; 
     margin-bottom: 10vh; 
 }
@@ -124,7 +209,7 @@ form {
     justify-content: space-between; 
     align-items: center; 
     width: 70%; 
-    height: 30vh; 
+    height: 15vh; 
     margin-bottom: 5%; 
     flex-basis: 1; 
 }
@@ -186,8 +271,8 @@ a img {
     display: grid; 
     grid-template-rows: 20vh, 5vh, 10vh; 
     grid-template-columns: 1fr;  
-    margin-left: 20%; 
-    margin-right: 20%; 
+    margin-left: 5%; 
+    margin-right: 5%; 
 }
 
 .moonfisher { 
@@ -203,7 +288,7 @@ a img {
 .hook { 
     grid-area: 2/1/3/2; 
     height: 5vh; 
-    margin-left:2vw; 
+    margin-left:2.5vw; 
 }
 .hook img { 
     max-height: 100%; 
@@ -327,16 +412,37 @@ a img {
     width: 101%;  
 }
 
-
+.fishingfun p {
+    font-size: 15px; 
+    margin-top: 5%; 
+    margin-left: 5%; 
+    font-family: 'Cabin Sketch'; 
+    color: #4356a4; 
+}
+.fishingfun p .one11 {
+    display: none; 
+}
 
 
 
 @media only screen and (min-width: 768px) {
+   
+    .fishinggrid { 
+        display: grid; 
+        grid-template-rows: 20vh, 5vh, 20vh; 
+        grid-template-columns: 1fr;  
+        grid-gap: 5px; 
+        margin-left: 5%; 
+        margin-right: 5%; 
+    }
+   
+   
+   
     .clouds .fish1,.fish2,.fish3 { 
         display: none; 
     }
     .homeajc {
-        padding-top:10%; 
+        padding-top:6%; 
     }
     .mainProjects {
         padding-top: 8%;
@@ -374,6 +480,7 @@ a img {
     }
     .icons { 
         margin-bottom: 0%; 
+        max-width:40vw; 
     }
     .mainProjects {
         display: flex; 
@@ -403,14 +510,14 @@ a img {
         margin-top: 5%;
     }
     .hook {
-        margin-left: 1.5vw; 
+        height: 7.5vh; 
     }
     .waves img {
         min-height: 150%; 
     }
     .moonfisher { 
         grid-area: 1/1/2/2; 
-        height: 20vh;
+        height: 30vh;
         display: flex; 
         grid-template-rows: 1fr; 
         grid-template-columns: 1fr, 1fr;  
@@ -461,11 +568,6 @@ a img {
         50%{visibility: visible;}
     }
 
-
-
-
-
-
     .rain2 { 
         grid-area: 2/3/3/5; 
     }
@@ -481,6 +583,7 @@ a img {
 
 .fishinggrid {
     margin-top: 5%; 
+    
 }
     .waves3 {
         padding-right: 1%; 
@@ -493,17 +596,35 @@ a img {
         max-height: 40vh; 
     }
     .clouds {
-        min-height: 17vh; 
+        min-height: 30vh; 
+    }
+    .waves {
+        min-height: 5vh; 
     }
 
-
-
-
-
-
-
+    /* .hook img { 
+        margin-left: 0.3%;
+    } */
+    .fishingfun p .one11 {
+        display: inline; 
+    }
+    .fishingfun p .two2 { 
+        display: none; 
+    }
+    .fishingfun p {
+        font-size: 30px;  
+        margin: 0%; 
+    }
+    .waves img {
+        min-height: 5vh; 
+    }
+    .leftground {
+        font-size: 40px; 
+    }
 
     }
+    
+
 
     @media only screen and (min-width: 1024px) {
         .homeajc {
@@ -526,11 +647,11 @@ a img {
         .mainProjects {
             padding-top: 8%;
         }
-        .mainContact { 
+        .mainContact {         
             padding-top: 10%;
         }
         .mainAbout { 
-            height: 75vh; 
+            height: 90vh; 
         }
         .mainAbout p { 
             padding: 1%; 
@@ -548,18 +669,20 @@ a img {
             padding-bottom: 0%;
         }
         form { 
-            padding-left: 13%; 
-            padding-right: 13%; 
+            padding-left: 10%; 
+            padding-right: 10%; 
             padding-bottom: 0%; 
             height: 45vh; 
             padding-top: 5%; 
         }
+        form div {
+            padding-bottom: 5vh; 
+            margin-bottom: 2vh; 
+        }
+
         .mainContact p { 
             margin-bottom: 0%; 
             font-size: 20px; 
-        }
-        .icons { 
-            margin-bottom: 0%; 
         }
         .mainProjects {
             display: flex; 
@@ -600,4 +723,51 @@ a img {
         .mainAbout .creative11 { 
             font-size: 30px; 
         }
+        .fishingfun p {
+            font-size: 40px; 
         }
+        .hook {
+            margin-left: 1.5vw; 
+        }
+        }
+
+        /* @media only screen and (min-height: 700px) {
+
+            /* .hook img {
+                margin-left: 0.8vw; 
+                
+            } */
+        } 
+        /* @media only screen and (min-height: 800px) {
+            form {
+                height: 35vh; 
+            }
+            /* .hook img {
+                margin-left: 0.3vw; 
+            } */
+        } */
+        /* @media only screen and (min-width: 1275px) {
+            
+            .moonfisher {
+                min-height: 50vh; 
+            }
+            .hook {
+                height: 12.5vh; 
+            }
+            /* .hook img {
+                margin-left: 0.5vw; 
+                max-height: 6vh; 
+            }
+            .hook {
+                max-height: 10vh; 
+            } */
+            /* .mainProjects {
+                margin-right: 20%; 
+                margin-left: 20%;  */
+            }
+        } */
+        /* @media only screen and (min-height: 1209px) and (min-width: 1350px) {
+            /* .hook img {
+                margin-left: 1.3vw; 
+            }
+        } */ */ */
