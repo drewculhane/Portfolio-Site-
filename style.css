@@ -1,0 +1,603 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Syncopate&display=swap');
+html, body{
+    height: 400vh; 
+    background-color: white; 
+    width: 100%; 
+    overflow: visible; 
+}
+.blueclouds { 
+    display: none; 
+}
+body {
+    display: flex; 
+    flex-flow: column wrap; 
+}
+nav {
+    box-shadow: 1px 1px 1px 1px grey; 
+    width: 100%; 
+}
+
+.gridcontainerbigbig {
+    display: grid; 
+    width: 100%;
+    grid-template-rows: 40vh, 30vh, 70vh, 130vh, 70vh;
+    grid-template-columns: 100%; 
+}
+.homeajc { 
+    padding-top: 60%; 
+    background-color: white; 
+    border-bottom: solid 2px grey; 
+    margin-right: 5%; 
+    margin-left: 5%; 
+    margin-top: 20%; 
+    display: flex; 
+    grid-area: 1/1/2/2; 
+    flex-direction: column; 
+    justify-content: flex-end; 
+    color: black; 
+}
+
+.leftground {
+    font-family: 'Aldrich'
+}
+
+.iam11 {
+    font-family: 'Syncopate'; 
+}
+
+.fishingfun { 
+    grid-area: 2/1/3/2; 
+    margin-right: 5%; 
+    margin-left: 5%; 
+    margin-bottom: 5%; 
+}
+
+.mainProjects {
+    padding-top: 60%; 
+    grid-area: 3/1/4/2; 
+    margin-right: 5%; 
+    margin-left: 5%; 
+    margin-bottom: 5%; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+}
+
+.mainContact { 
+    padding-top: 60%; 
+    grid-area: 4/1/5/2; 
+    border-bottom: solid 4px black; 
+    margin-right: 5%; 
+    margin-left: 5%; 
+    margin-bottom: 5%; 
+    display: flex; 
+    height: 120vh; 
+    flex-direction: column; 
+    align-items: center; 
+    align-content: space-between; 
+    flex-wrap: nowrap; 
+}
+
+.mainAbout { 
+    grid-area: 5/1/6/2; 
+    border-bottom: solid 2px black; 
+    margin-right: 5%; 
+    margin-left: 5%; 
+    margin-bottom: 5%; 
+    display: flex; 
+    height: 70vh; 
+}
+
+div .card {
+    margin-bottom: 10vh;
+    border: 3px solid black; 
+    height: 50vh; 
+}
+div .card img {
+    width: 100%; 
+    height: 60%;
+}
+h3 {
+    margin-bottom: 5%; 
+    font-family: 'Aldrich';
+}
+
+form {
+    border: 2px solid black; 
+    height: 50vh; 
+    padding: 5%;
+    border-radius: 10px; 
+    margin-bottom: 10vh; 
+}
+
+.mainContact p { 
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: center; 
+}
+
+.icons {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 70%; 
+    height: 30vh; 
+    margin-bottom: 5%; 
+    flex-basis: 1; 
+}
+
+a img {
+    max-width: 50px;
+    height: 50px; 
+    cursor: pointer; 
+}
+
+.mail { 
+    max-width: 60px; 
+}
+
+.bt307 { 
+    margin-bottom: 10%; 
+}
+
+.mainAbout { 
+    grid-area: 6/1/7/2; 
+    border-bottom: solid 2px grey; 
+    margin-right: 5%; 
+    margin-left: 5%; 
+    margin-bottom: 5%; 
+    display: flex; 
+    height: 70vh; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.aboutme {
+    padding-bottom: 10%;
+}
+.creative11 {
+    align-self: flex-start; 
+    font-size: 20px; 
+}
+
+.mainAbout p { 
+    margin-bottom: 5%; 
+    padding-bottom: 10%;
+}
+.barrier1 {
+    height:  4px; 
+    width: 100%; 
+    margin-bottom: 3%; 
+    background-color: black; 
+}
+.mainContact .barrier1 {
+    height: 10px; 
+    align-self: flex-start; 
+}
+.mainProjects .barrier1 h3 {
+    display: none; 
+}
+
+
+.fishinggrid { 
+    display: grid; 
+    grid-template-rows: 20vh, 5vh, 10vh; 
+    grid-template-columns: 1fr;  
+    margin-left: 20%; 
+    margin-right: 20%; 
+}
+
+.moonfisher { 
+    grid-area: 1/1/2/2; 
+    height: 20vh; 
+}
+.moonfisher1 { 
+    max-height: 100%; 
+}
+
+
+
+.hook { 
+    grid-area: 2/1/3/2; 
+    height: 5vh; 
+    margin-left:2vw; 
+}
+.hook img { 
+    max-height: 100%; 
+}
+
+@-webkit-keyframes swinging{
+    0%{-webkit-transform: rotate(20deg);}
+    50%{-webkit-transform: rotate(-5deg)}
+    100%{-webkit-transform: rotate(20deg);}
+}
+ 
+@keyframes swinging{
+    0%{transform: rotate(20deg);}
+    50%{transform: rotate(-5deg)}
+    100%{transform: rotate(20deg);}
+}
+ 
+.swingimage{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 1s linear forwards infinite;
+    animation: swinging 1s linear forwards infinite;
+}
+
+.clouds { 
+    grid-area: 3/1/4/2; 
+    height: 15vh; 
+    background-color: #4356a4; 
+    display: grid; 
+    grid-template-rows: 1fr, 1fr, 1fr; 
+    grid-template-columns: 1fr, 1fr, 1fr;  
+}
+
+.fish2 { 
+    grid-area: 2/1/3/2; 
+    max-height: 5vh; 
+    animation: 1.5s step-end infinite;
+    animation-name: blinkone; 
+    animation-delay: 0s; 
+    min-width: 50%; 
+    display: none; 
+}
+
+.fish1 { 
+    grid-area: 3/2/4/3; 
+    max-height: 5vh; 
+    animation: blink 1.5s step-end infinite; 
+    animation-name: blinkthree; 
+    min-width: 50%; 
+    display: none; 
+}
+
+.fish3 { 
+    grid-area: 4/3/5/4; 
+    max-height: 5vh; 
+    animation: 1.5s step-end infinite;
+    animation-name: blinktwo;  
+    animation-delay: 0s; 
+    min-width: 50%; 
+    display: none; 
+}
+
+@keyframes blinkone { 
+    0% {visibility: hidden;}
+    66.66% {visibility: visible;}
+}
+@keyframes blinktwo { 
+    0% {visibility: visible;}
+    33.33% {visibility: hidden;}
+}
+
+@keyframes blinkthree { 
+    0% {visibility: hidden;}
+    33.33% {visibility: visible;}
+    66.66% {visibility: hidden;}
+}
+.waves1 {
+    grid-area: 1/1/2/2; 
+    height: 2vh; 
+    display: grid; 
+    grid-template-columns: 1fr, 1fr, 1fr; 
+    grid-template-rows: 1fr; 
+}
+.waves2 { 
+    grid-area: 1/2/2/3; 
+    height: 2vh; 
+    display: grid; 
+    grid-template-columns: 1fr, 1fr, 1fr; 
+    grid-template-rows: 1fr; 
+}
+.waves3 { 
+    grid-area: 1/3/2/4; 
+    height: 2vh; 
+    display: grid; 
+    grid-template-columns: 1fr, 1fr, 1fr; 
+    grid-template-rows: 1fr; 
+}
+.waves img { 
+  max-height: 2vh;
+  background-color: white; 
+}
+.waves1 .waves2 .waves3 { 
+    background-color: white; 
+}
+.waves { 
+    background-color: white;
+}
+.waveimage1 {
+    grid-area: 1/1/2/2; 
+    height: 2vh; 
+    width: 101%;
+}
+.waveimage2 { 
+    grid-area: 1/2/2/3; 
+    height: 2vh; 
+    width: 101%; 
+}
+.waveimage3 { 
+    grid-area: 1/3/2/4; 
+    height: 2vh;
+    width: 101%;  
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .clouds .fish1,.fish2,.fish3 { 
+        display: none; 
+    }
+    .homeajc {
+        padding-top:10%; 
+    }
+    .mainProjects {
+        padding-top: 8%;
+    }
+    .mainContact { 
+        padding-top: 10%;
+    }
+    .mainAbout { 
+        height: 75vh; 
+    }
+    .mainAbout p { 
+        padding: 1%; 
+        line-height: 2em; 
+        align-self: center; 
+        justify-self: center; 
+        margin-bottom: 6%; 
+        display: flex; 
+    }
+    .creative11 { 
+        margin-bottom: 0%; 
+    }
+    .aboutme { 
+        margin-bottom: 10%; 
+        padding-bottom: 0%;
+    }
+    form { 
+        padding-left: 13%; 
+        padding-right: 13%; 
+        padding-bottom: 0%; 
+        height: 45vh; 
+        padding-top: 5%; 
+    }
+    .mainContact p { 
+        margin-bottom: 0%; 
+    }
+    .icons { 
+        margin-bottom: 0%; 
+    }
+    .mainProjects {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-between;
+        align-items: space-between; 
+        flex-direction: row;
+        align-content: space-between; 
+    }
+    .mainProjects h3 {
+        display: none; 
+
+    }
+    .mainProjects .barrier1 {
+        height: 100px; 
+        width: 100%; 
+        background-color: white; 
+        border-top: solid 2px black; 
+        font-family: 'Sans-serif'; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    }
+   .mainProjects .barrier1 h3 { 
+        display: flex; 
+        font-size: 50px; 
+        margin-top: 5%;
+    }
+    .hook {
+        margin-left: 1.5vw; 
+    }
+    .waves img {
+        min-height: 150%; 
+    }
+    .moonfisher { 
+        grid-area: 1/1/2/2; 
+        height: 20vh;
+        display: flex; 
+        grid-template-rows: 1fr; 
+        grid-template-columns: 1fr, 1fr;  
+    }
+
+    .moonfisher1 { 
+        grid-area: 1/1/2/2; 
+    }
+    .blueclouds { 
+        grid-area: 1/2/2/3; 
+        height: 20vh; 
+        display: grid; 
+        width: 51.3%; 
+        grid-template-rows: 1fr, 1fr, 1fr, 1fr; 
+        grid-template-columns: 1fr, 1fr, 1fr, 1fr; 
+    }
+   
+    .bcg22 {
+        grid-area: 1/3/2/5;
+        /* background-color: blue;  */
+    }
+   
+    .bcg44{
+        grid-area: 2/1/3/3;
+        /* background-color: blue;  */
+    }
+    .rain1 {
+        grid-area: 3/1/5/3;
+        height: 8vh; 
+    }
+    .rainimage1 { 
+        max-height: 100%; 
+        cursor: pointer; 
+        display: none; 
+        animation: 0.8s step-end infinite;
+        animation-name: blinkrain;  
+    }
+    .rainimage2 { 
+        max-height: 100%; 
+        cursor: pointer; 
+        display: none; 
+        animation: 0.8s step-end infinite;
+        animation-delay: 0.2s; 
+        animation-name: blinkrain;  
+    }
+    @keyframes blinkrain { 
+        0% {visibility: hidden;}
+        50%{visibility: visible;}
+    }
+
+
+
+
+
+
+    .rain2 { 
+        grid-area: 2/3/3/5; 
+    }
+    .cloud9 { 
+        max-width: 60%; 
+        cursor: pointer; 
+    }
+    .blueclouds div {
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+    }
+
+.fishinggrid {
+    margin-top: 5%; 
+}
+    .waves3 {
+        padding-right: 1%; 
+    }
+    .card img { 
+        max-height: 50%; 
+        width: 80%; 
+    }
+    .card {
+        max-height: 40vh; 
+    }
+    .clouds {
+        min-height: 17vh; 
+    }
+
+
+
+
+
+
+
+
+    }
+
+    @media only screen and (min-width: 1024px) {
+        .homeajc {
+            padding-top:6%; 
+        }
+        .leftground { 
+            margin-bottom: 2%; 
+        
+        }
+        .icons {
+            width: 28%;
+            height: 12%;
+        }
+        .mainContact p { 
+            margin-left: 20%;
+            margin-right: 20%;
+            text-align: center; 
+        }
+
+        .mainProjects {
+            padding-top: 8%;
+        }
+        .mainContact { 
+            padding-top: 10%;
+        }
+        .mainAbout { 
+            height: 75vh; 
+        }
+        .mainAbout p { 
+            padding: 1%; 
+            line-height: 2em; 
+            align-self: center; 
+            justify-self: center; 
+            margin-bottom: 6%; 
+            display: flex; 
+        }
+        .creative11 { 
+            margin-bottom: 0%; 
+        }
+        .aboutme { 
+            margin-bottom: 15%; 
+            padding-bottom: 0%;
+        }
+        form { 
+            padding-left: 13%; 
+            padding-right: 13%; 
+            padding-bottom: 0%; 
+            height: 45vh; 
+            padding-top: 5%; 
+        }
+        .mainContact p { 
+            margin-bottom: 0%; 
+            font-size: 20px; 
+        }
+        .icons { 
+            margin-bottom: 0%; 
+        }
+        .mainProjects {
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-between;
+            align-items: space-between; 
+            flex-direction: row;
+            align-content: space-between; 
+        }
+        .mainProjects h3 {
+            display: none; 
+    
+        }
+        .mainProjects .barrier1 {
+            height: 100px; 
+            width: 100%; 
+            background-color: white; 
+            border-top: solid 2px black; 
+            font-family: 'Sans-serif'; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+        }
+       .mainProjects .barrier1 h3 { 
+            display: flex; 
+            font-size: 50px; 
+            margin-top: 5%;
+        }
+        .mainAbout p {
+            align-self: flex-start; 
+            font-size: 20px; 
+            margin-left: 10%; 
+        }
+        .mainAbout .aboutme {
+            margin-bottom: 6%;
+            font-size: 35px; 
+        }
+        .mainAbout .creative11 { 
+            font-size: 30px; 
+        }
+        }
