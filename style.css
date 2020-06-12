@@ -7,6 +7,9 @@ html, body{
     width: 100%; 
     overflow: visible; 
 }
+.blueclouds { 
+    display: none; 
+}
 
 .moonfisher { 
     grid-area: 1/1/2/2;
@@ -96,7 +99,7 @@ nav {
 .gridcontainerbigbig {
     display: grid; 
     width: 100%;
-    grid-template-rows: 40vh 36vh 400vh 130vh;
+    grid-template-rows: 40vh 36vh 400vh 100vh 80vh;
     grid-template-columns: 100%; 
 }
 .homeajc { 
@@ -151,7 +154,6 @@ nav {
     margin-left: 5%; 
     margin-bottom: 5%; 
     display: flex; 
-    height: 120vh; 
     flex-direction: column; 
     align-items: center; 
     align-content: space-between; 
@@ -165,7 +167,8 @@ nav {
     margin-left: 5%; 
     margin-bottom: 5%; 
     display: flex; 
-    height: 70vh; 
+    flex-direction: column; 
+    align-items: center; 
 }
 
 div .card {
@@ -222,17 +225,6 @@ a img {
     margin-bottom: 10%; 
 }
 
-.mainAbout { 
-    grid-area: 6/1/7/2; 
-    border-bottom: solid 2px grey; 
-    margin-right: 5%; 
-    margin-left: 5%; 
-    margin-bottom: 5%; 
-    display: flex; 
-    height: 70vh; 
-    flex-direction: column; 
-    align-items: center; 
-}
 
 .aboutme {
     padding-bottom: 10%;
@@ -429,11 +421,38 @@ a img {
     max-width: 950px; 
 }
 
+@media only screen and (max-width: 850px) and (max-height: 400px) {
+    .gridcontainerbigbig {
+        display: grid; 
+        width: 100%;
+        grid-template-rows: 88vh 77vh 750vh 230vh 170vh;
+        grid-template-columns: 100%; 
+    }
+    body {
+        min-height: 1313vh; 
+        padding-left: 20%; 
+        padding-right: 20%;
+    }
+    .mainProjects {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        flex-wrap: wrap; 
+        align-items: space-between; 
+    }
+    div .card {
+        height: 100vh; 
+    }
+    form {
+        height: 100vh; 
+    }
 
-@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-height: 1000px) and (min-width: 768px) {
    
-    
-   
+    nav {
+        min-height: 6vh; 
+    }
     .clouds .fish1,.fish2,.fish3 { 
         display: none; 
     }
@@ -447,7 +466,7 @@ a img {
         padding-top: 10%;
     }
     .mainAbout { 
-        height: 75vh; 
+        height: 70vh; 
     }
     .mainAbout p { 
         padding: 1%; 
@@ -577,6 +596,18 @@ a img {
 
 
     @media only screen and (min-width: 1024px) {
+        .gridcontainerbigbig {
+            display: grid; 
+            width: 100%;
+            grid-template-rows: 40vh 70vh 150vh 100vh;
+            grid-template-columns: 100%; 
+        }
+        nav {
+            min-height: 7vh; 
+        }
+        div .card {
+            max-height: 30vh; 
+        }
         .homeajc {
             padding-top:6%; 
         }
@@ -586,7 +617,7 @@ a img {
         }
         .icons {
             width: 28%;
-            height: 12%;
+            min-height: 12%; 
         }
         .mainContact p { 
             margin-left: 20%;
@@ -596,12 +627,15 @@ a img {
 
         .mainProjects {
             padding-top: 8%;
+            padding-right: 5%; 
+            padding-left: 5%; 
         }
         .mainContact {         
             padding-top: 10%;
+            max-height: 120vh; 
         }
         .mainAbout { 
-            height: 70vh; 
+            height: 85vh; 
         }
         .mainAbout p { 
             padding: 1%; 
@@ -622,7 +656,7 @@ a img {
             padding-left: 10%; 
             padding-right: 10%; 
             padding-bottom: 0%; 
-            height: 45vh; 
+            height: 45%; 
             padding-top: 5%; 
         }
         form div {
@@ -695,8 +729,5 @@ a img {
             }
 
         }
-        
-        
 
-       
-    
+        
