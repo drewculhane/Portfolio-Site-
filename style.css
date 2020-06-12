@@ -601,14 +601,14 @@ a img {
         .gridcontainerbigbig {
             display: grid; 
             width: 100%;
-            grid-template-rows: 40vh 70vh 150vh 100vh;
+            grid-template-rows: 40vh 70vh 200vh 110vh;
             grid-template-columns: 100%; 
         }
         nav {
             min-height: 7vh; 
         }
         div .card {
-            max-height: 30vh; 
+            max-height: 50vh; 
         }
         .homeajc {
             padding-top:6%; 
@@ -658,7 +658,7 @@ a img {
             padding-left: 10%; 
             padding-right: 10%; 
             padding-bottom: 0%; 
-            height: 45%; 
+            height: 55%;
             padding-top: 5%; 
         }
         form div {
