@@ -7,9 +7,6 @@ html, body{
     width: 100%; 
     overflow: visible; 
 }
-.blueclouds { 
-    display: none; 
-}
 
 .moonfisher { 
     grid-area: 1/1/2/2;
