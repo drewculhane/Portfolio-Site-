@@ -44,14 +44,14 @@ html, body{
 .rainimage1 { 
     max-height: 100%; 
     cursor: pointer; 
-    display: none; 
+    display: initial; 
     animation: 0.8s step-end infinite;
     animation-name: blinkrain;  
 }
 .rainimage2 { 
     max-height: 100%; 
     cursor: pointer; 
-    display: none; 
+    display: initial; 
     animation: 0.8s step-end infinite;
     animation-delay: 0.2s; 
     animation-name: blinkrain;  
