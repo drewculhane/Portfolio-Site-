@@ -504,6 +504,8 @@ a img {
         align-items: space-between; 
         flex-direction: row;
         align-content: space-between; 
+        padding-right: 5%; 
+        padding-left: 5%; 
     }
     .mainProjects h3 {
         display: none; 
