@@ -63,6 +63,7 @@ function app(projectsArr) {
         $pCard.attr('class', 'card-text')
         $aref.attr('class', 'btn btn-dark')
         $cardimg.attr('class', 'card-img-top')
+        $aref.attr('target', '_blank')
     }) 
 }
 $("#home").click(function() {
