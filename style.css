@@ -101,7 +101,7 @@ nav {
 .gridcontainerbigbig {
     display: grid; 
     width: 100%;
-    grid-template-rows: 40vh 36vh 400vh 100vh 80vh;
+    grid-template-rows: 40vh 36vh 200vh 100vh 80vh;
     grid-template-columns: 100%; 
 }
 .homeajc { 
