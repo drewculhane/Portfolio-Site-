@@ -608,7 +608,7 @@ a img {
         .gridcontainerbigbig {
             display: grid; 
             width: 100%;
-            grid-template-rows: 40vh 70vh 200vh 110vh;
+            grid-template-rows: 40vh 70vh 100vh 110vh;
             grid-template-columns: 100%; 
         }
         nav {
